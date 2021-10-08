@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: grey;
+    font-family: 'Impact', Times, serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.banner {
+    font-size: 50px;
+    padding: 20px;
+    font-family: "Script MT", sans-serif;
+    color: rgb(204, 13, 13);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-item {
+    list-style: none;
+    padding: 0 20px;    
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: black;
+    padding: 10px
+}
+
+.nav-item > a:hover {
+    background-color: blue;
+}
