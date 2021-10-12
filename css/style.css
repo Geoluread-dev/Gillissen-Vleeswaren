@@ -6,41 +6,151 @@
 
 body {
     background-color: grey;
-    font-family: 'Impact', Times, serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    align-items: center;
-    min-height: 8vh;
+    background: white;
 }
 
-.banner {
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 12vh;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.info {
+    background: blue;
+    padding: 10px 40px;
+    margin-bottom: -130px;
+    width: 33.3%;
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo-title {
+    color: rgb(255, 0, 0);
+    letter-spacing: -1px;
+    font-family: "Script MT", serif;
     font-size: 50px;
-    padding: 20px;
-    font-family: "Script MT", sans-serif;
-    color: rgb(204, 13, 13);
+    font-weight: bolder;
+}
+
+.logo hr {
+    width: 20%;
+    margin: 10px auto;
+    color: white;
+}
+
+.subtitle {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .nav-list {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 66.7%;
 }
 
-.nav-item {
-    list-style: none;
-    padding: 0 20px;    
+.nav-list li {
+    list-style: none;   
 }
 
-.nav-item > a {
+.nav-list a {
+    background: 
+        linear-gradient(
+            to bottom, 
+            blue 100%,
+            blue 0
+        );
+    background-position: 100% 0;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: lighter;
     color: black;
-    padding: 10px
+    padding: 10px;
+    transition: background-size 150ms ease-in, color 150ms;
 }
 
-.nav-item > a:hover {
-    background-color: blue;
+.nav-list a:hover {
+    background-size: 4px 50px;
+    color: #fff;
+}
+
+.burger {
+    display: none;
+    margin-left: 30%;
+}
+
+.burger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: black;
+}
+
+@media screen and (max-width: 1024px){
+    .info {
+        margin: 0;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .logo hr {
+        display: none;
+    }
+    
+    .subtitle {
+        display: none;
+    }
+
+    .info-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 898px){
+    body {
+        
+    }
+
+    nav {
+        background: blue;
+    }
+
+    .nav-list {
+        position: absolute;
+        right: 0px;
+        height: 88vh;
+        top: 12vh;
+        background: blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+
+    .nav-list li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
 }
