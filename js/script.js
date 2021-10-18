@@ -1,3 +1,11 @@
+document.onreadystatechange = () => {
+    const preloader = document.querySelector('.preloader');
+
+    if(document.readyState === 'complete') {
+        preloader.classList.add('preloader-done');
+    }
+};
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-list');
@@ -17,7 +25,7 @@ const navSlide = () => {
         // Burger Animation
         burger.classList.toggle('toggle');
     });
-}
+};
 
 const dropdownContent = () => {
     const item = document.querySelector('a');
@@ -32,7 +40,7 @@ const dropdownContent = () => {
             dropdown.style.display = 'block';
         }
     });
-}
+};
 
 navSlide();
 dropdownContent();
