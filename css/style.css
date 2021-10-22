@@ -246,6 +246,7 @@ header {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
+/* Cards */
 .card {
     width: 100%;
     position: relative;
@@ -288,16 +289,22 @@ header {
 }
 
 .card-list {
-    visibility: hidden;
+    display: none;
     opacity: 0;
     max-height: 0;
-    transition: all 350ms ease-in-out;
+    transition: all 350ms ease;
 }
 
 .card:hover .card-list {
-    visibility: visible;
+    display: block;
     opacity: 1;
     max-height: 500px;
+}
+
+/* BBQ */
+.info {
+    padding: 50px 0;
+    text-align: center;
 }
 
 /* Filler */
