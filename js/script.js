@@ -31,8 +31,18 @@ const dropdownContent = () => {
     const item = document.querySelector('a');
     const dropdown = document.querySelector('.dropdown');
 
-    item.addEventListener('click', () => {
-        item.classList.toggle('item-active');
+    item.addEventListener('mouseover', () => {
+        item.classList.add('item-active');
+
+        if (dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+        } else {
+            dropdown.style.display = 'block';
+        }
+    });
+
+    item.addEventListener('mouseleave', () => {
+        item.classList.remove('item-active');
 
         if (dropdown.style.display === 'block') {
             dropdown.style.display = 'none';
