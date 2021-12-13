@@ -371,34 +371,84 @@ header {
     font-family: "Script MT", serif;
 }
 
+.bg {
+    background: url("../img/winkel.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .kerst {
-    border: solid green;
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--blue);
+    background-color: rgba(6, 33, 110, .8);
     color: #fff;
 }
 
 .kerst > div {
-    border: solid red;
     width: 33.3%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .kerstwrapper {
-    border: solid yellow;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.kerst > div > h2 {
+}
+
+.kerst > div ul {
+    list-style-type: none;
+}
+
+.one {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.two {
+    text-align: right;
+}
+
+.kerstinfo {
+    padding: 30px;
+    background: var(--blue);
+    color: #fff;
+}
+
+.kerstinfo p {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.kerstinfowrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 10px;
+    background: #031649;
+    box-shadow: #222 3px 5px 10px;
+}
+
+.letop {
+    width: 50%;
+    font-size: 20px;
+}
+
+.afhalen {
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
 
-.kerst > div > h2 {
-    border: solid purple;
-}
-
-.kerst > div ul {
-    border: solid blue;
+.afhalen ul {
     list-style-type: none;
 }
 
@@ -522,6 +572,10 @@ footer {
     .dropdown {
         position: relative;
         background: var(--red);
+    }
+
+    .kerst > div {
+        width: 100%;
     }
 
     .grid {
