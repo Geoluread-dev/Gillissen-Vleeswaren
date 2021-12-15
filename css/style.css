@@ -252,10 +252,6 @@ header {
     color: var(--red);
 }
 
-.bellen {
-    
-}
-
 /* Content */
 .assortiment {
     background: #fff;
@@ -384,6 +380,7 @@ header {
     flex-wrap: wrap;
     background-color: rgba(6, 33, 110, .8);
     color: #fff;
+    padding: 20px;
 }
 
 .kerst > div {
@@ -391,13 +388,16 @@ header {
     padding: 10px;
 }
 
+.kerst > div > p, .kerst > div > h2{
+    font-style: italic;
+    text-shadow: rgb(63, 63, 63) 3px 3px 3px;
+    font-size: 20px;
+}
+
 .kerstwrapper {
     display: flex;
     justify-content: space-between;
     position: relative;
-}
-
-.kerst > div > h2 {
 }
 
 .kerst > div ul {
@@ -412,6 +412,8 @@ header {
 
 .two {
     text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .kerstinfo {
@@ -513,10 +515,15 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 898px){
-    nav {
-        background: var(--blue);
+@media screen and (max-width: 1253px){
+
+    .kerst > div {
+        width: 50%;
     }
+
+}
+
+@media screen and (max-width: 898px){
 
     .nav-list {
         position: absolute;
@@ -575,6 +582,18 @@ footer {
     }
 
     .kerst > div {
+        width: 100%;
+    }
+
+    .kerstinfowrapper {
+        display: block;
+    }
+
+    .letop {
+        width: 100%;
+    }
+    
+    .afhalen {
         width: 100%;
     }
 
