@@ -64,11 +64,15 @@ nav {
 }
 
 .logo-title {
-    color: var(--red);
     letter-spacing: -1px;
     font-family: "Script MT", serif;
     font-size: 50px;
     font-weight: bolder;
+}
+
+.logo-title a {
+    text-decoration: none;
+    color: var(--red);
 }
 
 .nav-list {
@@ -198,6 +202,7 @@ header {
     font-size: 5em;
     color: var(--red);
     font-family: 'Script MT', serif;
+    text-align: center;
 }
 
 .subtitle {
@@ -257,6 +262,13 @@ header {
     background: #fff;
 }
 
+.constructie {
+    background-color: #06216E;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
 .more {
     text-align: center;
     margin: 30px 0;
@@ -293,6 +305,11 @@ header {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+}
+
+.info {
+    text-align: center;
+    padding: 30px 0;
 }
 
 /* Cards */
@@ -392,6 +409,7 @@ header {
     font-style: italic;
     text-shadow: rgb(63, 63, 63) 3px 3px 3px;
     font-size: 20px;
+    color:var(--red)
 }
 
 .kerstwrapper {
@@ -452,6 +470,20 @@ header {
 
 .afhalen ul {
     list-style-type: none;
+}
+
+/* BBQ */
+
+.bbq-zelf {
+    padding: 50px;
+    background: var(--blue);
+    color: white;
+}
+
+.bbq-vlees {
+    border: 3px solid violet;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 /* Filler */
