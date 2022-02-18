@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.roboto {
+    font-family: 'Roboto', serif;
+}
+
 :root {
     --primary: #B12727;
     --primaryL: #c15252;
@@ -22,6 +26,7 @@ body {
     background-color: var(--white);
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 .preloader {
@@ -156,7 +161,7 @@ header {
     width: 100%;
     background-image: url('../img/winkel.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -178,6 +183,27 @@ header {
 }
 
 .subtitle {
+    color: var(--white);
+    font-size: 25px;
+    font-family: 'Script MT', serif;
+}
+
+/* Product Header */
+.product > .header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.product > .title {
+    font-size: 5em;
+    color: var(--primary);
+    font-family: 'Script MT', serif;
+    text-shadow: 2px 2px 3px var(--secundaryD);
+}
+
+.product > .subtitle {
     color: var(--white);
     font-size: 25px;
     font-family: 'Script MT', serif;
@@ -216,11 +242,12 @@ header {
     background: var(--white);
 }
 
-.constructie {
+.melding {
     background-color: var(--secundary);
     color: var(--white);
-    padding: 30px;
+    padding: 20px;
     text-align: center;
+    font-size: 13px;
 }
 
 .more {
